@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+   <children>
+      <AnchorPane layoutX="44.0" layoutY="102.0" prefHeight="500.0" prefWidth="400.0" styleClass="card"
+                  stylesheets="@../../../design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutY="121.0" prefHeight="382.0" prefWidth="400.0">
+               <children>
+                  <GridPane layoutX="9.0" layoutY="8.0" prefHeight="366.0" prefWidth="385.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="4" GridPane.rowIndex="1" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="1" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#operatorProcess" styleClass="keypad" stylesheets="@../../../design.css" text="+" GridPane.columnIndex="3" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="3" GridPane.columnIndex="2" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="2" GridPane.columnIndex="1" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="7" GridPane.rowIndex="2" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#operatorProcess" styleClass="keypad" stylesheets="@../../../design.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#operatorProcess" styleClass="keypad" stylesheets="@../../../design.css" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#operatorProcess" styleClass="keypad" stylesheets="@../../../design.css" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#operatorProcess" styleClass="keypad" stylesheets="@../../../design.css" text="Ans" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#computeProcess" styleClass="keypad" stylesheets="@../../../design.css" text="." GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="92.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="45.0" layoutY="26.0" prefHeight="57.0" prefWidth="298.0" styleClass="key-result" stylesheets="@../../../design.css" text="0" />
+                  <Label id="prevNum" fx:id="prevNum" layoutX="67.0" layoutY="34.0" prefHeight="21.0" prefWidth="254.0" styleClass="prev-number" stylesheets="@../../../design.css" />
+                  <Button layoutX="378.0" layoutY="-5.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="22.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="clear" layoutX="10.0" layoutY="104.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="108.0" styleClass="clear" stylesheets="@../../../design.css" text="CLEAR" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

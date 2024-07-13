@@ -1,0 +1,62 @@
+.main{
+
+   -fx-background-color:transparent;
+
+}
+.card{
+
+  -fx-background-color:linear-gradient(to bottom right, #fc00ff, #00dbde);
+  -fx-background-radius:15px;
+
+}
+.key-result{
+
+  -fx-background-color:linear-gradient(to bottom right, rgba(140, 0, 143, 0.30), rgba(0, 130, 133, 0.30));
+  -fx-background-radius:20px;
+  -fx-text-fill:#fff;
+  -fx-font-size:20px;
+  -fx-padding:20px 15px 5px 15px;
+}
+.prev-number{
+
+   -fx-font-size:15px;
+   -fx-text-fill:#fff;
+}
+.keypad{
+
+  -fx-background-color:rgba(0, 130, 133, 0.10);
+  -fx-background-radius:0px;
+  -fx-text-fill:#fff;
+  -fx-font-size:30px;
+  -fx-cursor:hand;
+
+}
+.keypad:hover{
+
+  -fx-background-color:rgba(140, 0, 143, 0.30);
+
+}
+.clear{
+
+  -fx-background-color:rgba(0, 130, 133, 0.10);
+  -fx-cursor:hand;
+  -fx-text-fill:#fff;
+
+}
+.clear:hover{
+
+  -fx-background-color:rgba(140, 0, 143, 0.30);
+
+}
+.exit{
+
+  -fx-background-color:#bf3c54;
+  -fx-background-radius:50px;
+  -fx-cursor:hand;
+
+}
+.exit:hover{
+
+  -fx-background-color:rgba(140, 0, 143, 0.30);
+
+}
